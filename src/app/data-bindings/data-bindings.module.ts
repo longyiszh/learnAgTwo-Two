@@ -7,6 +7,7 @@ import dBindingRoute from './data-bindings.route';
 import { DataBindingsComponent } from './data-bindings.component';
 import { DBindIndexComponent } from './d-bind-index/d-bind-index.component';
 import { DBind404Component } from './d-bind404/d-bind404.component';
+import { IOComponent } from './io/io.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { DBind404Component } from './d-bind404/d-bind404.component';
   declarations: [
     DataBindingsComponent,
     DBindIndexComponent,
-    DBind404Component
+    DBind404Component,
+    IOComponent
   ]
 })
 export class DataBindingsModule { }

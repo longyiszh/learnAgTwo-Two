@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { IOComponent } from '../io/io.component';
+
 
 @Component({
   selector: 'app-d-bind-index',
@@ -15,6 +17,26 @@ export class DBindIndexComponent implements OnInit {
 
   private email: string;
   private password: string;
+
+  public playList = [
+    {
+      id: "TESV SE",
+      name: "laogun",
+      played: true
+    },
+    {
+      id: "SC2Coop",
+      name: "SC2terrible",
+      played: true
+    },
+    {
+      id: "FCP",
+      name: "yuan ku yuan shi ren",
+      played: false
+    }
+  ];
+
+  public playedGames: Object;
 
   ngOnInit() {
     this.now = this.getNowFormatDate();

@@ -41,4 +41,9 @@
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
+  <div class="col-lg-12">
+    <h3>Parent-child component Interaction</h3>
+    <app-io [playList]="playList" (onTell)="playedGames=$event"></app-io>
+    <h4>Games played: {{ playedGames }}</h4>
+  </div>
 </div>
