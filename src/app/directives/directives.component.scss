@@ -1,0 +1,18 @@
+#divShape {
+    width: 200px;
+    height: 200px;
+    margin: 0px auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+.rounder {
+    border: solid lawngreen 1px;
+    border-radius: 100px;
+    p {
+        position: relative;
+        top: 100px;
+    }
+}

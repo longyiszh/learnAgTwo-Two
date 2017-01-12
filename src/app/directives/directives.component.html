@@ -1,0 +1,54 @@
+<header class="container">
+  <h2>Directives Section</h2>
+</header>
+<main class="container">
+  <div class="col-lg-12">
+    <h3>Attribute Directives</h3>
+    <small>Interact with the element it's on to change its properties.</small>
+    <div class="centered card">
+      <h4>[ngClass]</h4>
+      <div id="divShape" [ngClass]="shapeClass">
+        <p>"rounder: true"</p>
+      </div>
+    </div>
+    <div class="centered card">
+      <h4>[ngStyle]</h4>
+      <div id="divStyleEg">
+        <p [ngStyle]="{ 'font-size': fontsize, 'color': fontColor, 'font-family': fontFamily}">paraStyle = "font-size: 20px; color: limegreen; font-family: serif;";</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-12">
+    <h3>Structual Directives</h3>
+    <small>Change the structure of the HTML code.</small>
+    <div class="col-lg-12 card">
+      <h4>[*ngIf]</h4>
+      <p>charming is it not?</p>
+      <p><button (click)="sayThanks()">yes</button> <button *ngIf="false">no</button> No no! No no no!</p>
+    </div>
+    <div class="col-lg-12 card">
+      <h4>[ngSwitch] and [*ngSwitchCase]</h4>
+      <p>Choose a BDK that Billy would send ya.</p>
+      <select name="BDKSelection" #selBDK>
+        <option value="TESVSE">TESV SE</option>
+        <option value="BF1">BF1</option>
+        <option value="COD13">COD13</option>
+      </select>
+      <button (click)="requestBDK(selBDK.options[selBDK.selectedIndex].value)">Request BDK</button>
+      <div [ngSwitch] = "bdk" class="col-lg-12 card">
+        <span *ngSwitchCase="''">Please Select a BDK</span>
+        <span *ngSwitchCase="'TESVSE'">erua! Billy Cai bu hui rang wo shua lao gun!</span>
+        <span *ngSwitchCase="'BF1'">Is Billy or I really interested in BF1?</span>
+        <span *ngSwitchCase="'COD13'">My benben would BOOM should I accept that!</span>
+        <span *ngSwitchDefault>Sorry but a Huoxing game is not supported.</span>
+      </div>
+    </div>
+    <div class="col-lg-12 card">
+      <h4>[*ngFor]</h4>
+      <p>This div will show all the SDKs (being) given to SDK fans. </p>
+      <ul>
+        <li *ngFor="let sdk of sdkList">{{ sdk }}</li>
+      </ul>
+    </div>
+  </div>
+</main>
