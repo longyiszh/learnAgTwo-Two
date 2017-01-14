@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { DataBindingsModule } from './data-bindings/data-bindings.module';
+import { PipeModule } from './pipe/pipe.module';
 
 import lAgTwoRoute from './app.route';
 
@@ -12,14 +13,13 @@ import { IndexComponent } from './index/index.component';
 import { Http404Component } from './http404/http404.component';
 import { DirectivesComponent } from './directives/directives.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
     Http404Component,
     DirectivesComponent,
-
+    
   ],
   imports: [
     BrowserModule,
@@ -27,6 +27,7 @@ import { DirectivesComponent } from './directives/directives.component';
     HttpModule,
 
     DataBindingsModule,
+    PipeModule,
 
     lAgTwoRoute
   ],

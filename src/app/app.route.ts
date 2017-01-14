@@ -23,6 +23,10 @@ const lAgTwoRoute: Routes = [
         component: DirectivesComponent
     },
     {
+        path:'pipe',
+        loadChildren: './pipe/pipe.module#PipeModule'
+    },
+    {
         path:'**',
         component: Http404Component
     }
