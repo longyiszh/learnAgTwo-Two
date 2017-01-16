@@ -1,12 +1,29 @@
 div#divMedia {
-    div.avatarHolder {
-        //float: left;
-        //clear: right;
-        div.uAvatar {
-            height: 200px;
+    div.row {
+        margin-top: 10px;
+        div.avatarHolder {
+            //float: left;
+            //clear: right;
+            div.uAvatar {
+                height: 200px;
+                img {
+                    margin: 0px auto;
+                }
+            }
+            div.uName {
+                text-align: center;
+            }
         }
-        div.uName {
-            text-align: center;
+        article.card {
+            box-sizing: border-box;
+            border-radius: 0px;
+            background-color: #e0e0e0;
+            box-shadow: 10px 10px 5px #eeeeee;
+            margin-top:5px;
+            margin-bottom: 5px;
         }
     }
+}
+div.placeholder {
+    height: 200px;
 }

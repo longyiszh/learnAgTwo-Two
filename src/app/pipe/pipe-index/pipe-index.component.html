@@ -27,10 +27,14 @@
   <h2>Custom Pipes</h2>
   <input type="text" placeholder="filter by name" [(ngModel)]="term">
   <div id="divMedia" class="col-lg-12" >
-    <div class="col-lg-12" *ngFor="let medium of seeker | byName:term">
+    <div class="row" *ngFor="let medium of seeker | byName:term">
       <div class="avatarHolder col-lg-3">
-        <div class="uAvatar col-lg-12">{{ medium.name }}'s avatar</div>
-        <div class="uName col-lg-12">{{ medium.name }}</div>
+        <div class="uAvatar col-lg-12">
+          <img class="img-fluid" src="assets/media/images/{{ medium.avatar }}" alt="{{ medium.name }}'s avatar">
+        </div>
+        <div class="uName col-lg-12">
+          <p>{{ medium.name }}</p>
+        </div>
       </div>
       <div class="col-lg-9">
         <article class="card col-lg-12">
@@ -50,6 +54,6 @@
         </article>
       </div>
     </div>
-
   </div>
 </div>
+<div class="container placeholder"></div>
