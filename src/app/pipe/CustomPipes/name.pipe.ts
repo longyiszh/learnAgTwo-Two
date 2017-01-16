@@ -7,7 +7,7 @@ export class NamePipe implements PipeTransform {
 
   transform(media: any, term: any): any {
     //check if search term is empty
-    if (term === undefined||null) {
+    if (term === (undefined||null||"")) {
       return media;
     }
     else {
