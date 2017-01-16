@@ -24,9 +24,15 @@ export class PipeService {
   extractData(res: Response) {
     let data = res.json() || [];
     data.forEach(medium => {
-      medium.QZoneDate = new Date(medium.QZoneDate);
-      medium.WeiboDate = new Date(medium.WeiboDate);
-      medium.FacebookDate = new Date(medium.FacebookDate);
+      if (medium.QZoneDate !== null) {
+        medium.QZoneDate = new Date(medium.QZoneDate);
+      }
+      if (medium.WeiboDate !== null) {
+        medium.WeiboDate = new Date(medium.WeiboDate);
+      }
+      if (medium.FacebookDate !== null) {
+        medium.FacebookDate = new Date(medium.FacebookDate);
+      }
     });
     return data;
   }
