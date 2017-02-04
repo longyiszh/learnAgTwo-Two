@@ -5,12 +5,15 @@
 </header>
 
 <main class="container">
-  <div [@lightsOnOff]="cdkRoomLightCurrent" id="cdkRoom" class="card">
+  <div (@lightsOnOff.start)="animStart($event)"  [@lightsOnOff]="cdkRoomLightCurrent" id="cdkRoom" class="card">
     <div class="bulbHolder">
       <a (click)="toggleLight()"><i>Lightbulb</i></a>
     </div>
     <main>
       <h1>CDK Room</h1>
     </main>
+  </div>
+  <div [hidden]=!promptMsg.shown>
+    <h3>You have new messages in your console.</h3>
   </div>
 </main>
