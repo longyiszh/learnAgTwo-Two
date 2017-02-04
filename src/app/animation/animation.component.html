@@ -1,0 +1,16 @@
+<header class="container">
+  <h3>
+    Animations
+  </h3>
+</header>
+
+<main class="container">
+  <div [@lightsOnOff]="cdkRoomLightCurrent" id="cdkRoom" class="card">
+    <div class="bulbHolder">
+      <a (click)="toggleLight()"><i>Lightbulb</i></a>
+    </div>
+    <main>
+      <h1>CDK Room</h1>
+    </main>
+  </div>
+</main>

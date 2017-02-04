@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { Http404Component } from './http404/http404.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { AnimationComponent } from './animation/animation.component';
 
 const lAgTwoRoute: Routes = [
     {
@@ -25,6 +26,10 @@ const lAgTwoRoute: Routes = [
     {
         path:'pipe',
         loadChildren: './pipe/pipe.module#PipeModule'
+    },
+    {
+        path:'anim',
+        component: AnimationComponent
     },
     {
         path:'**',
