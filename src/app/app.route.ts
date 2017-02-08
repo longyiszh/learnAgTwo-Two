@@ -37,4 +37,4 @@ const lAgTwoRoute: Routes = [
     }
 ];
 
-export default RouterModule.forRoot(lAgTwoRoute,{ useHash: true });
+export const lAgTwoRouting = RouterModule.forRoot(lAgTwoRoute,{ useHash: true });

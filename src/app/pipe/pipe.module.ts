@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule }   from '@angular/forms';
 
-import pipeRoute from './pipe.route';
+import { pipeRouting } from './pipe.route';
 
 import { PipeIndexComponent } from './pipe-index/pipe-index.component';
 import { Pipe404Component } from './pipe404/pipe404.component';
@@ -14,7 +14,7 @@ import { NamePipe } from './CustomPipes/name.pipe';
     CommonModule,
     FormsModule,
 
-    pipeRoute
+    pipeRouting
   ],
   declarations: [
     PipeComponent,

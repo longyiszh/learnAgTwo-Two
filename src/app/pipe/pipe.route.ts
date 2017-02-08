@@ -26,4 +26,4 @@ const pipeRoute: Routes = [
     }
 ];
 
-export default RouterModule.forChild(pipeRoute);
+export const pipeRouting = RouterModule.forChild(pipeRoute);

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule }   from '@angular/forms';
 
-import dBindingRoute from './data-bindings.route';
+import { dBindingRouting } from './data-bindings.route';
 
 import { DataBindingsComponent } from './data-bindings.component';
 import { DBindIndexComponent } from './d-bind-index/d-bind-index.component';
@@ -14,7 +14,7 @@ import { IOComponent } from './io/io.component';
     CommonModule,
     FormsModule,
     
-    dBindingRoute
+    dBindingRouting
   ],
   declarations: [
     DataBindingsComponent,

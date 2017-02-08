@@ -26,4 +26,4 @@ const dBindingRoute: Routes = [
         ]
     }
 ];
-export default RouterModule.forChild(dBindingRoute);
+export const dBindingRouting = RouterModule.forChild(dBindingRoute);

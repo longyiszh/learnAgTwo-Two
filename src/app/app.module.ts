@@ -6,7 +6,7 @@ import { HttpModule } from '@angular/http';
 import { DataBindingsModule } from './data-bindings/data-bindings.module';
 import { PipeModule } from './pipe/pipe.module';
 
-import lAgTwoRoute from './app.route';
+import { lAgTwoRouting } from './app.route';
 
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
@@ -28,10 +28,10 @@ import { AnimationComponent } from './animation/animation.component';
     FormsModule,
     HttpModule,
 
-    DataBindingsModule,
-    PipeModule,
+    //DataBindingsModule,
+    //PipeModule,
 
-    lAgTwoRoute
+    lAgTwoRouting
   ],
   providers: [],
   bootstrap: [AppComponent]
