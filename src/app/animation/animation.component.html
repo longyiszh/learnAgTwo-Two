@@ -5,7 +5,8 @@
 </header>
 
 <main class="container">
-  <div (@lightsOnOff.start)="animStart($event)"  [@lightsOnOff]="cdkRoomLightCurrent" id="cdkRoom" class="card">
+  <!-- 注： 同一个元素上可以有多个触发器 -->
+  <div (@lightsOnOff.start)="animStart($event)"  [@lightsOnOff]="cdkRoomLightCurrent" id="cdkRoom" class="card room">
     <div class="bulbHolder">
       <a (click)="toggleLight()"><i>Lightbulb</i></a>
     </div>
@@ -16,4 +17,24 @@
   <div [hidden]=!promptMsg.shown>
     <h3>You have new messages in your console.</h3>
   </div>
+
+  <div [@dimensioner]="cdkRoomHeightCurrent" id="bdkRoom" class="card room">
+    <div class="bulbHolder">
+      <a (click)="toggleHeight()"><i>Dimonsioner</i></a>
+    </div>
+    <main>
+      <h1>BDK Room</h1>
+    </main>
+  </div>
+
+  <div [@groupTrans]="mdkRoomLightCurrent" id="mdkRoom" class="card room">
+    <div class="bulbHolder">
+      <a (click)="toggleLightMdk()"><i>Parallel</i></a>
+    </div>
+    <main>
+      <h1>MDK Room</h1>
+    </main>
+  </div>
+
 </main>
+

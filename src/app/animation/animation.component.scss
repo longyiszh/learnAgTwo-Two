@@ -1,4 +1,4 @@
-div#cdkRoom {
+.room {
     min-height: 300px;
     div.bulbHolder {
         text-align: right;
@@ -8,6 +8,19 @@ div#cdkRoom {
         margin-top: 10%;
     }
 }
+
+div#bdkRoom {
+    min-height: 1px;
+    main{
+        margin-top: 2%;
+    }
+}
+
+div#mdkRoom {
+    margin-top: 15px;
+}
+
+
 
 .dark {
     background-color: black;
