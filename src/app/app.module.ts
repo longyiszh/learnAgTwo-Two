@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { DataBindingsModule } from './data-bindings/data-bindings.module';
 import { PipeModule } from './pipe/pipe.module';
+import { MongoModule } from './mongo/mongo.module';
 
 import { lAgTwoRouting } from './app.route';
 
@@ -28,8 +29,9 @@ import { AnimationComponent } from './animation/animation.component';
     FormsModule,
     HttpModule,
 
-    //DataBindingsModule,
-    //PipeModule,
+    DataBindingsModule,
+    PipeModule,
+    MongoModule,
 
     lAgTwoRouting
   ],

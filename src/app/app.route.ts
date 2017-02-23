@@ -32,6 +32,10 @@ const lAgTwoRoute: Routes = [
         component: AnimationComponent
     },
     {
+        path:'mongo',
+        loadChildren: './mongo/mongo.module#MongoModule'
+    },
+    {
         path:'**',
         component: Http404Component
     }
