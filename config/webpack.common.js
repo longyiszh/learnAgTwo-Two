@@ -94,6 +94,7 @@ module.exports = {
     ]),
 
     new HtmlWebpackPlugin({
+      favicon: root('src', 'client', 'favicon.ico'),
       template: root('src', 'client', 'index.html')
     })
   ]
