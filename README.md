@@ -1,31 +1,51 @@
 # LearnAgTwoTwo
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.30.
+Helping wcxaaa learn Angular 2+.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[Angular-cli](https://github.com/angular/angular-cli) has been replaced by a dedicated webpack ([ngx-webpack-simple-starter-sass](https://github.com/longyiszh/ngx-webpack-simple-starter-sass)) since version 2.
+
+## Install dependencies
+``` bash
+npm install
+```
+..or
+``` bash
+yarn install
+```
+
+## Server Firing up
+``` bash
+npm run xxx
+```
+
+and xxx being:
+
+|   -   |  dev   |  compile  | start|
+|:-----:|:------:|:-----:|:-----:|
+|  front  |  `serve:c`[Webpack-dev-server]|  `build:c`[Webpack]  | N/A
+|  back  |  N/A  |  `build:s`[Webpack]  | `start:s` [koa only]
+|  together  |  N/A  |  `build`[Webpack] | `start` [koa]
+
+## Unit Testing
+To execute the unit tests via [Karma](https://karma-runner.github.io), run:
+``` bash
+npm run test
+```
 
 ## Code scaffolding
+Copy and paste the `dummy` module.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+## Miscellaneous
 
-## Build
+### Mongo Mock Data
+模拟Steve CDK数据已经丢到在src/client/assets/data里面了。请您用mongoimport导入，或`npm start`将后台启动后，往`/api/sdk/add`上面post。格式实例：
+``` json
+  {
+    "name": "辐射：新奥尔良",
+    "price": 188,
+    "platform": "St EA m",
+    "receiver": "everyone@高端黑讨论组",
+    "steveAttitude": "gone_insane"
+  }
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

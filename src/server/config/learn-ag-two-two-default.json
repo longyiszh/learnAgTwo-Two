@@ -1,0 +1,12 @@
+[
+  {
+    "mongo": {
+      "db": "latt",
+      "authDB": "authDB",
+      "user": "user",
+      "password": "password",
+      "port": 27017
+    }
+  }
+]
+  
