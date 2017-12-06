@@ -1,6 +1,7 @@
 # LearnAgTwoTwo
 
-Helping wcxaaa learn Angular 2+
+Helping wcxaaa learn Angular 2+.
+
 [Angular-cli](https://github.com/angular/angular-cli) has been replaced by a dedicated webpack ([ngx-webpack-simple-starter-sass](https://github.com/longyiszh/ngx-webpack-simple-starter-sass)) since version 2.
 
 ## Install dependencies
@@ -32,9 +33,4 @@ npm run test
 ```
 
 ## Code scaffolding
-
 Copy and paste the `dummy` module.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
