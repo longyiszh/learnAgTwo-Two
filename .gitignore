@@ -38,3 +38,7 @@ Thumbs.db
 # Site specific
 *.log
 *.lock
+/src/server/static/*
+!.gitkeep
+/src/server/config/*
+!/src/server/config/learn-ag-two-two-default.json
