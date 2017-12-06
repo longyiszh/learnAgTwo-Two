@@ -5,6 +5,7 @@ import * as Router from 'koa-router';
 import * as logger from 'koa-logger';
 import * as send from 'koa-send';
 import * as serve from 'koa-static';
+import * as bodyParser from 'koa-bodyparser';
 
 // db
 import { initDB } from './db/index';
@@ -17,7 +18,7 @@ const router = new Router();
 const clientPath = path.join(__dirname, "../client");
 
 app.use(logger());
-// app.use(bodyParser());
+app.use(bodyParser());
 app.use(serve(clientPath));
 
 // root route and sub route settings

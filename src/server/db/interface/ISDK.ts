@@ -2,7 +2,7 @@ import { Document } from 'mongoose';
 
 export interface ISDK extends Document {
   name: string,
-  price?: string,
+  price?: number,
   platform?: string,
   receiver?: string,
   steveAttitude?: string

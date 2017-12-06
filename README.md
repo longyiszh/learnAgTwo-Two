@@ -34,3 +34,18 @@ npm run test
 
 ## Code scaffolding
 Copy and paste the `dummy` module.
+
+## Miscellaneous
+
+### Mongo Mock Data
+模拟Steve CDK数据已经丢到在src/client/assets/data里面了。请您用mongoimport导入，或`npm start`将后台启动后，往`/api/sdk/add`上面post。格式实例：
+``` json
+  {
+    "name": "辐射：新奥尔良",
+    "price": 188,
+    "platform": "St EA m",
+    "receiver": "everyone@高端黑讨论组",
+    "steveAttitude": "gone_insane"
+  }
+```
+

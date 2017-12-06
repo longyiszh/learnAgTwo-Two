@@ -1,0 +1,23 @@
+[
+  {
+    "name": "卡巴斯基1.0 100年版",
+    "price": 1,
+    "platform": "Windows 98",
+    "receiver": "Billy@CDK",
+    "steveAttitude": "Happy"
+  },
+  {
+    "name": "360安全卫士",
+    "price": 0,
+    "platform": "Ubuntu x86_64",
+    "receiver": "微软雅黑",
+    "steveAttitude": "More than Happy"
+  },
+  {
+    "name": "Windows 9 旗舰版",
+    "price": -1,
+    "platform": "PC",
+    "receiver": "everyone@高端黑讨论组",
+    "steveAttitude": "Confused"
+  }
+]
